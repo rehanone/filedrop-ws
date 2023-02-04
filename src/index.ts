@@ -54,4 +54,4 @@ setInterval(() => {
   clientManager.removeInactiveClients();
 }, 10000);
 
-console.log('Server running');
+console.log(`Server running on: ${host}:${port}`);

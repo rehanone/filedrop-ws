@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  ws:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      WS_HOST: 127.0.0.1
+      WS_PORT: 5001
+      WS_BEHIND_PROXY: yes
+      TURN_MODE: hmac
+      TURN_SERVER: "turn:(hostname)"
+      TURN_USERNAME: filedrop
+      TURN_SECRET: top_secret
